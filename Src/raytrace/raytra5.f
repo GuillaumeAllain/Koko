@@ -1744,6 +1744,8 @@ C
 C SUB RAYTRA.FOR
 
       SUBROUTINE RAYTRA
+          !! implements tracing of a ray
+        
           USE GLOBALS
 C
           IMPLICIT NONE

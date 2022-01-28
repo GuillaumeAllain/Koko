@@ -27,6 +27,8 @@ C       FIRST FILE OF PLOT/CAD ROUTINES
 
 C SUB PPLOTT.FOR
       SUBROUTINE PPLOTT
+      ! controls all plotting procedures. All the plotting commands are executed from here.
+!                
           USE NSSMOD
 C
           IMPLICIT NONE
@@ -995,6 +997,9 @@ C
 
 C SUB PLTVIE.FOR
       SUBROUTINE PLTVIE
+! 
+! does the "PLOT VIEW" command at the cmd level
+! 
 C
           IMPLICIT NONE
 C

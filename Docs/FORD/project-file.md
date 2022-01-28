@@ -3,5 +3,5 @@ src_dir: ../../Src/raytrace
          ../../Src/plotcad
 output_dir: ./doc 
 summary: Koko
-author: Jonas
+author: Jonas H.
 include ../../Src/include

@@ -1,0 +1,8 @@
+https://www.doxygen.nl/manual/starting.html
+
+https://www.doxygen.nl/manual/docblocks.html#fortranblocks
+
+!> Build the restriction matrix for the aggregation
+!! method.
+!! @param aggr information about the aggregates
+!! @todo Handle special case
