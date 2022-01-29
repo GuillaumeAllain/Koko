@@ -1,0 +1,14 @@
+# how to use FORD:
+https://github.com/Fortran-FOSS-Programmers/ford/wiki
+
+# example for project-file:
+https://github.com/fortran-lang/fpm/blob/main/docs.md
+
+# project file options:
+https://github.com/Fortran-FOSS-Programmers/ford/wiki/Project-File-Options
+
+# running ford:
+https://github.com/Fortran-FOSS-Programmers/ford/wiki/Running-Ford
+# ford project-file.md
+
+
