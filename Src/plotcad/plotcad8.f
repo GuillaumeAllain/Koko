@@ -4056,7 +4056,7 @@ C
                       IK=1
                       DO IX=0,2500,25
                           XVAL=IX
-                          IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,XVAL,YVAL)
+                          IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,INT(XVAL),YVAL)
                           JIMX(IK)=INT(DRAY(1))
                           IF(SPLFIT) JIMX(IK)=INT(YVAL)
                           JIMY(IK)=-INT(XVAL)+LLPOS
@@ -4418,7 +4418,7 @@ C
                       IK=1
                       DO IX=0,2500,25
                           XVAL=IX
-                          IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,XVAL,YVAL)
+                          IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,INT(XVAL),YVAL)
                           JIMX(IK)=INT(DRAY(1))
                           IF(SPLFIT)JIMX(IK)=INT(YVAL)
                           JIMY(IK)=-INT(XVAL)+RLPOS
@@ -4792,7 +4792,7 @@ C
                       IK=1
                       DO IX=0,2500,25
                           XVAL=IX
-                          IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,XVAL,YVAL)
+                          IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,INT(XVAL),YVAL)
                           JIMX(IK)=INT(DRAY(1))
                           IF(SPLFIT) JIMX(IK)=INT(YVAL)
                           JIMY(IK)=-INT(XVAL)+LLPOS
@@ -5153,7 +5153,7 @@ C
                       IK=1
                       DO IX=0,2500,25
                           XVAL=IX
-                          IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,XVAL,YVAL)
+                          IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,INT(XVAL),YVAL)
                           JIMX(IK)=INT(DRAY(1))
                           IF(SPLFIT)JIMX(IK)=INT(YVAL)
                           JIMY(IK)=-INT(XVAL)+RLPOS
@@ -5529,7 +5529,7 @@ C
                       IK=1
                       DO IX=0,2500,25
                           XVAL=IX
-                          IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,XVAL,YVAL)
+                          IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,INT(XVAL),YVAL)
                           JIMX(IK)=INT(DRAY(1))
                           IF(SPLFIT)JIMX(IK)=INT(YVAL)
                           JIMY(IK)=-INT(XVAL)+LLPOS
@@ -5890,7 +5890,7 @@ C
                       IK=1
                       DO IX=0,2500,25
                           XVAL=IX
-                          IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,XVAL,YVAL)
+                          IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,INT(XVAL),YVAL)
                           JIMX(IK)=INT(DRAY(1))
                           IF(SPLFIT)JIMX(IK)=INT(YVAL)
                           JIMY(IK)=-INT(XVAL)+RLPOS
@@ -6260,7 +6260,7 @@ C
                       IK=1
                       DO IX=0,2500,25
                           XVAL=IX
-                          IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,XVAL,YVAL)
+                          IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,INT(XVAL),YVAL)
                           JIMX(IK)=INT(DRAY(1))
                           IF(SPLFIT) JIMX(IK)=INT(YVAL)
                           JIMY(IK)=-INT(XVAL)+OPLPOS
@@ -6630,7 +6630,7 @@ C
                   IK=1
                   DO IX=0,2500,25
                       XVAL=IX
-                      IF(SPLFIT)CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,XVAL,YVAL)
+                      IF(SPLFIT)CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,INT(XVAL),YVAL)
                       JIMX(IK)=INT(DRAY(1))
                       IF(SPLFIT)JIMX(IK)=INT(YVAL)
                       JIMY(IK)=-INT(XVAL)+LLPOS
@@ -6794,7 +6794,7 @@ C
                   IK=1
                   DO IX=0,2500,25
                       XVAL=IX
-                      IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,XVAL,YVAL)
+                      IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,INT(XVAL),YVAL)
                       JIMX(IK)=INT(DRAY(1))
                       IF(SPLFIT)JIMX(IK)=INT(YVAL)
                       JIMY(IK)=-INT(XVAL)+RLPOS
@@ -6966,7 +6966,7 @@ C
                   IK=1
                   DO IX=0,2500,25
                       XVAL=IX
-                      IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,XVAL,YVAL)
+                      IF(SPLFIT) CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,INT(XVAL),YVAL)
                       JIMX(IK)=INT(DRAY(1))
                       IF(SPLFIT)JIMX(IK)=INT(YVAL)
                       JIMY(IK)=-INT(XVAL)+LLPOS
@@ -7130,7 +7130,7 @@ C
                   IK=1
                   DO IX=0,2500,25
                       XVAL=IX
-                      IF(SPLFIT)CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,XVAL,YVAL)
+                      IF(SPLFIT)CALL SPLINT(DRAX,DRAY,XY2,MAXFAN+1,INT(XVAL),YVAL)
                       JIMX(IK)=INT(DRAY(1))
                       IF(SPLFIT)JIMX(IK)=INT(YVAL)
                       JIMY(IK)=-INT(XVAL)+RLPOS

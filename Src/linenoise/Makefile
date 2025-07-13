@@ -5,9 +5,9 @@
 
 ifndef CFLAGS
   ifdef DEBUG
-    CFLAGS = -g
+    CFLAGS = -g -Wc++11-extensions
   else
-    CFLAGS = -O2
+    CFLAGS = -O2 -Wc++11-extensions
   endif
 endif
 

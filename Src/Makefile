@@ -9,7 +9,7 @@ SUBDIRS = kmath ldm config hardware macro optimize paraxial pickup \
 
 # default platform is Linux
 #ifndef OS
-  OS = LINUX
+OS = MACOS
 #endif
 
 # default installation directory prefix
@@ -18,18 +18,18 @@ ifndef $(PREFIX)
 endif
 
 # compiler flags
-CC = gcc         # for now, only support GCC
+CC = g++         # for now, only support GCC
 FC = gfortran
 ifdef DEBUG
-  FFLAGS = -g -cpp -Wall -ffixed-line-length-none -malign-double -fno-align-commons -D$(OS)
-  CFLAGS = -Wall -g -malign-double
+  FFLAGS = -g -cpp -Wall -ffixed-line-length-none -fno-align-commons -D$(OS)
+  CFLAGS = -Wall -g -Wc++11-extensions -Wc++11-compat-deprecated-writable-strings
 else
   ifdef NATIVE
-    FFLAGS = -g -cpp -O2 -ffixed-line-length-none -march=native -mtune=native -malign-double -fno-align-commons -D$(OS)
+    FFLAGS = -g -cpp -O2 -ffixed-line-length-none -march=native -mtune=native -fno-align-commons -D$(OS)
   else
-    FFLAGS = -g -cpp -O2 -ffixed-line-length-none -malign-double -fno-align-commons -D$(OS)
+    FFLAGS = -g -cpp -O2 -ffixed-line-length-none -fno-align-commons -D$(OS)
   endif  
-  CFLAGS = -g -O2 -malign-double
+  CFLAGS = -g -O2 -Wc+11-extensions -Wc++11-compat-deprecated-writable-strings
 endif
 IFLAGS = -I../include -I../modules
 
@@ -37,7 +37,7 @@ IFLAGS = -I../include -I../modules
 export CC FC IFLAGS CFLAGS FFLAGS
 
 LDIR = -L./lib
-LIBS = -static -Wl,--start-group $(addprefix -l,$(SUBDIRS)) -llinenoise -lkmod -Wl,--end-group -lm -lstdc++ -lregex
+LIBS = -W $(addprefix -l,$(SUBDIRS)) -llinenoise -lkmod -W -lm -lstdc++ #-lregex
 
 fSRC = koko.f cmder.f names.f libload.f saverest.f
 
